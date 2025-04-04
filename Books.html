@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection - E-Library</title>
+    <link rel="stylesheet" href="Bookstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Book Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book-collection.html" class="active">Books</a></li>
+                <li><a href="About Library.html">About</a></li>
+                <li><a href="Contact Us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for books..." onkeyup="filterBooks()">
+            <select id="categoryFilter" onchange="filterBooks()">
+                <option value="all">All Categories</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+        </section>
+        <fieldset>
+            <label style="--_img: url(https://assets.codepen.io/2585/fiddle-leaf.jpeg)">
+              <input type="radio" name="images" value="Fiddle Leaf">
+            </label>
+            <label style="--_img: url(https://assets.codepen.io/2585/pink-princess.jpeg)">
+              <input type="radio" name="images" value="Pink Princess">
+            </label>
+            <label style="--_img: url(https://assets.codepen.io/2585/kara-eads-zcVArTF8Frs-unsplash.jpg)">
+              <input type="radio" name="images" value="Monstera" checked>
+            </label>
+            <label style="--_img: url(https://assets.codepen.io/2585/pothos.jpeg)">
+              <input type="radio" name="images" value="Pothos">
+            </label>
+            <label style="--_img: url(https://assets.codepen.io/2585/rubber-tree.webp)">
+              <input type="radio" name="images" value="Rubber Tree">
+            </label>
+          </fieldset>
+        <section class="book-grid" id="bookGrid">
+            <div class="book" data-category="fiction">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+            </div>
+            <div class="book" data-category="non-fiction">
+                <h3>Becoming</h3>
+                <p>Author: Michelle Obama</p>
+            </div>
+            <div class="book" data-category="science">
+                <h3>A Brief History of Time</h3>
+                <p>Author: Stephen Hawking</p>
+            </div>
+            <div class="book" data-category="history">
+                <h3>Sapiens: A Brief History of Humankind</h3>
+                <p>Author: Yuval Noah Harari</p>
+            </div>
+          
+            <div class="book" data-category="science">
+                <h3>Cosmos</h3>
+                <p>Author: Carl Sagan</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 E-Library. All rights reserved.</p>
+    </footer>
+
+    <script src="Homescript.js"></script>
+</body>
+</html>

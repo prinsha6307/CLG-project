@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+.header li {
+    margin: 0 1rem;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hands-working-digital-device-network-graphic-overlay_53876-123863.avif') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem 0;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.feature {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    background-color: #6200ea;
+    color: white;
+    padding: 2rem;
+}
+
+.cta .btn {
+    background: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
